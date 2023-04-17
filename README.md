@@ -9,11 +9,4 @@ Dungeon is an isometric (dimetric) dungeon crawler being developed with Rust. Th
 
 # Game Engine 
 
-There currently 2 game engines under consideration for Dungeon:
-
-* Bevy
-* Amethyst
-
-Other Rust game engines exist and may be added to the list if Amethyst or Bevy are not used.
-
-
+Currently evaluating game engines for use in Dungeon.
