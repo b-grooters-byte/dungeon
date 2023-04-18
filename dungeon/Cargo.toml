@@ -1,0 +1,20 @@
+[package]
+name = "dungeon"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[features]
+default = []
+debug = ["level/debug", "bevy-inspector-egui"]
+
+[dependencies]
+bevy = "0.10.1"
+colored = { version = "2.0.0", optional = true }
+level = { path = "../level", optional = false }
+bevy-inspector-egui = { version = "0.18.3", optional = true }
