@@ -4,6 +4,7 @@ use bevy::prelude::*;
 
 fn main() {
     App::new()
+    .add_startup_system(camera_setup)
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             
             primary_window: Some(Window{
@@ -15,4 +16,9 @@ fn main() {
         }))
         .add_plugin(dungeon::DungeonPlugin)
         .run();
+}
+
+
+fn camera_setup(mut commands: Commands) {
+    commands.spawn(Camera2dBundle::default());
 }
